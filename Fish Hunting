@@ -1,0 +1,97 @@
+#Fish Hunting Test
+import random
+#Game loop
+
+keep_going=True #Turn keep_going into True
+while keep_going: #While loop
+  your_total=0
+  computer_total=0
+  for x in range(3): # for loop, run 3 times.
+      fish=["Salmon","Tuna","Squid"] #Create a list to store the variables of fish.
+#Create three variables to store the type of fish you hunted each time.
+      First=random.choice(fish)  #The first type is chosen from the list(fish)                                                                                                                                                                                                                                                                      
+      Second=random.choice(fish)  #The second type is chosen from the list(fish) randomly.
+      Third=random.choice(fish)  #The third type is chosen from the list(fish) randomly.
+      print("Your Fish:",First,Second,Third) #Show what kinds of fish you have hunted
+      first=random.choice(fish)
+      second=random.choice(fish)
+      third=random.choice(fish)
+      print("Computer's Fish:",first,second,third)
+      #Check the categories of fish:
+      if fish.index(First)==fish.index("Salmon"):
+          a=10
+      elif fish.index(First)==fish.index("Tuna"):
+          a=15
+      elif fish.index(First)==fish.index("Squid"):
+          a=12
+        
+      if fish.index(Second)==fish.index("Salmon"):
+          b=10
+      elif fish.index(Second)==fish.index("Tuna"):
+          b=15
+      elif fish.index(Second)==fish.index("Squid"):
+          b=12
+        
+      if fish.index(Third)==fish.index("Salmon"):
+          c=10
+      elif fish.index(Third)==fish.index("Tuna"):
+          c=15
+      elif fish.index(Third)==fish.index("Squid"):
+          c=12    
+      value=a+b+c
+      print("The money you earn:$",value,) 
+      #Check the conditions for computer's situations.
+      if fish.index(first)==fish.index("Salmon"):
+          ca=10
+      elif fish.index(first)==fish.index("Tuna"):
+          ca=15
+      elif fish.index(first)==fish.index("Squid"):
+          ca=12
+        
+      if fish.index(second)==fish.index("Salmon"):
+          cb=10
+      elif fish.index(second)==fish.index("Tuna"):
+          cb=15
+      elif fish.index(second)==fish.index("Squid"):
+          cb=12
+        
+      if fish.index(third)==fish.index("Salmon"):
+          cc=10
+      elif fish.index(third)==fish.index("Tuna"):
+          cc=15
+      elif fish.index(third)==fish.index("Squid"):
+          cc=12    
+      computer_value=ca+cb+cc
+      print("Computer earns :$",computer_value,)
+      print("")
+      print("")
+      your_total+=value
+      computer_total+=computer_value
+  print("You earns:$",your_total,"in total") 
+  print("Comtuper earns:$",computer_total,"in total!")
+    #Check the condition:
+  if computer_total > your_total:
+  	print("The computer wins!")
+  elif computer_total==your_total:
+  	print("It is a tie!")
+  elif computer_total < your_total:
+  	print("You win!")		
+      
+    
+  print("")
+  keep_going=(input("Press [Enter] to keep running the program")=="")
+  print("")
+  print("")	
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
